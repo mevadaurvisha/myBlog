@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(174, 243, 174);
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+        }
+
+        .content {
+            width: calc(100% - 250px);
+            margin-left: 250px;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-family: "Unbounded", sans-serif;
+            font-size: 25px;
+        }
+
+        .modal {
+            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        }
+
+        .main-btn {
+            background-color: green;
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 7px;
+        }
+
+        .span-brand {
+            color: green;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        .addBlogbtn {
+            border-radius: 50px;
+            padding: 10px;
+            width: 130px;
+            margin-left: -10px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .addBlogbtn:hover {
+            background-color: green;
+            transition: 0.3s;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b><span class="span-brand">Green Forest</span> Blogs</b></a>
+        </div>
+        <div class="buttons">
+            <div class="ps-5">
+                <a href="/login" class="main-btn">Login</a>
+            </div> &nbsp;&nbsp;&nbsp;&nbsp;
+            <div>
+                <a href="/logOut" class="main-btn">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar and Main Content -->
+    <div class="d-flex">
+        <div class="sidebar bg-dark p-3 text-white">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/addBlog">
+                        <button class="addBlogbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16" style="color: white;">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                            </svg>
+                            Add Blogs
+                        </button>
+                    </a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/myBlog">My Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="">Change Password</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/addTopic">Add Topic +</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/addSubTopic">Add Sub Topic +</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/getAllBlogs">All Creators Blogs</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content p-4 text-left">
+            <h2 style="margin-left: 180px;">Welcome to the <span style="color: green;"><b>Green Forest</b></span>
+                <b>Blogs</b>.. <span style="font-family: monospace; font-weight: bolder;"></span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

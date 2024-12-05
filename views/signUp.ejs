@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+    body {
+        background-color: rgb(174, 243, 174);
+    }
+
+    /* Colors */
+    .bg-green {
+        background-color: green;
+    }
+
+    .text-green {
+        color: green;
+    }
+
+    .btn-green {
+        background-color: green;
+        color: #fff;
+        border: none;
+    }
+
+    .btn-green:hover {
+        background-color: greenyellow;
+    }
+
+    .bg-light-gray {
+        background-color: #f8f9fa;
+    }
+
+    /* Card Styling */
+    .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        background-color: #a05252;
+        color: white;
+    }
+
+    .card-footer a {
+        color: green;
+    }
+
+    .card-footer a:hover {
+        color: greenyellow;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mt-5">
+                    <div class="card-header text-center text-light bg-green">
+                        <h3>Sign Up</h3>
+                    </div>
+                    <div class="card-body bg-light-gray">
+                        <form action="/signUpForm" method="POST">
+                            <div class="form-group">
+                                <label for="name" class="text-green">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your full name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="text-green">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-green">Password</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Enter your password" name="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password" class="text-green">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm-password"
+                                    placeholder="Confirm your password" name="con_pass">
+                            </div>
+                            <button type="submit" class="btn btn-green btn-block">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted">Already have an account? <a href="/login">Login here</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
